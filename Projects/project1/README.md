@@ -1,4 +1,4 @@
-Modify the TCP server to act as a chat server.
+Modify the TCP server to act as a chat server. I interpreted chat server to mean the server which allows two clients to message each other, rather than a chat room with multiple clients broadcasting their messages to the room
 
 v1
 
