@@ -28,7 +28,6 @@ def handle_client(client_socket, clients):
 		disp = str(displayname)
 		disp = disp.replace("b'","")
 		disp = disp.replace("\\n'","")
-
 		message = bytes(disp,"utf-8") + b"# " + request
 
 		for c in clients:
@@ -46,5 +45,3 @@ while True:
 
 	client_handler = threading.Thread(target=handle_client,args=(client, clients))
 	client_handler.start()
-
-	print(clients)
